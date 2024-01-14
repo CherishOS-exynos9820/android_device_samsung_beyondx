@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The bananaOS Project
+# Copyright (C) 2021 The lineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/banana_beyondx.mk
+    $(LOCAL_DIR)/lineage_beyondx.mk
 
 COMMON_LUNCH_CHOICES := \
-    banana_beyondx-eng \
-    banana_beyondx-user \
-    banana_beyondx-userdebug
+    lineage_beyondx-eng \
+    lineage_beyondx-user \
+    lineage_beyondx-userdebug

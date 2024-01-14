@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The bananaOS Project
+# Copyright (C) 2021 The lineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -33,16 +33,19 @@ TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 3040
 TARGET_SCREEN_WIDTH := 1440
 
-## Inherit some common banana stuff
-$(call inherit-product, vendor/banana/config/common.mk)
-BANANA_MAINTAINER := FrEeRuNnEr4EvEr
-TARGET_FACE_UNLOCK_SUPPORTED := true
+# MATRIXX
+MATRIXX_CHIPSET := exynos9820
+MATRIXX_BATTERY := 4500mAh
+MATRIXX_DISPLAY := 1440x3040
+
+## Inherit some common lineage stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 ## Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := banana_beyondx
+PRODUCT_NAME := lineage_beyondx
 PRODUCT_DEVICE := beyondx
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G977B
